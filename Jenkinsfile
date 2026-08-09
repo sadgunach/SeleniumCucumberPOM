@@ -38,7 +38,7 @@ pipeline {
         always {
             // 2. Publish the standard TestNG results XML to generate dashboard trend charts inside Jenkins
             // Requires the 'TestNG Results Plugin' installed on Jenkins
-            testng defaultDescriptors: '**/target/surefire-reports/testng-results.xml'
+            junit testResults: '**/testng-results.xml', allowEmptyResults: true
             
             // 3. Archive and publish your Extent Spark HTML Report cleanly on the build panel
             // Requires the 'HTML Publisher Plugin' installed on Jenkins
