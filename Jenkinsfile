@@ -46,7 +46,7 @@ pipeline {
                 allowMissing: false,
                 alwaysLinkToLastBuild: true,
                 keepAll: true,
-                reportDir: 'test-output/SparkReport',
+                reportDir: 'target/SparkReport',
                 reportFiles: 'Spark.html',
                 reportName: 'Extent Execution Report',
                 reportTitles: 'Automation Execution Status'
