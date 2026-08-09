@@ -6,3 +6,7 @@ test-output/
 .idea/
 *.iml
 .DS_Store
+report_json/
+report_xml/
+reports/
+test-outout/
