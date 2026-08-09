@@ -1,0 +1,5 @@
+{
+  "txtUsername": { "type": "xpath", "value": "//input[@name='username']" },
+  "txtPassword": { "type": "xpath", "value": "//input[@name='password']" },
+  "btnSubmit": { "type": "xpath", "value": "//span[text()='SUBMIT']//ancestor::a" }
+}
