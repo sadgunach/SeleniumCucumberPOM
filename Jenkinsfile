@@ -29,7 +29,7 @@ pipeline {
                 script {
                     // Triggers the Maven lifecycle execution. 
                     // It passes Jenkins parameter choices directly down into system properties (-D)
-                    sh "mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=${params.BROWSER} -Denv=${params.ENVIRONMENT} -Ddataproviderthreadcount=${params.THREAD_COUNT}"
+                    sh "mvn clean test -DsuiteXmlFile=testng.xml -Dbrowser=chrome -Denv=prod -Ddataproviderthreadcount=3"
                 }
             }
         }
